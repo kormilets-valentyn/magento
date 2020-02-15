@@ -1,16 +1,16 @@
 <?php
 
-namespace testModule\Test\Model;
+namespace Module\Test\Model;
 
 use Magento\Framework\Model\AbstractModel;
-use testModule\Test\Api\Data\PostInterface;
+use Module\Test\Api\Data\PostInterface;
 
 
 class Post extends AbstractModel implements PostInterface
 {
     protected function _construct()
     {
-        $this->_init(\testModule\Test\Model\ResourceModel\Post::class);
+        $this->_init(\Module\Test\Model\ResourceModel\Post::class);
     }
     public function getName()
     {

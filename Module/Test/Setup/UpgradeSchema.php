@@ -1,6 +1,6 @@
 <?php
 
-namespace testModule\Test\Setup;
+namespace Module\Test\Setup;
 
 use Magento\Framework\DB\Ddl\Table;
 use Magento\Framework\Setup\ModuleContextInterface;

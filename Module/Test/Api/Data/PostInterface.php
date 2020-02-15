@@ -1,6 +1,6 @@
 <?php
 
-namespace testModule\Test\Api\Data;
+namespace Module\Test\Api\Data;
 
 interface PostInterface
 {

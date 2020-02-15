@@ -1,7 +1,7 @@
 <?php
 
 
-namespace testModule\Test\Setup;
+namespace Module\Test\Setup;
 
 
 use Magento\Framework\DB\Adapter\AdapterInterface;
