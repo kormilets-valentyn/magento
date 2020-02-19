@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+            id="Test_Test::discount"
+            title="Filter"
+            module="Test_Test"
+            sortOrder="51"
+            resource="Test_Test::discount"
+                    />
+        <add
+                id="Test_Test::config"
+                title="Show config"
+                module="Test_Test"
+                resource="Test_Test::config"
+                sortOrder="10"
+                action="adminhtml/system_config/edit/section/filter"
+                parent="Test_Test::discount"
+        />
+        <add
+                id="Test_Test::config2"
+                title="Show config2"
+                module="Test_Test"
+                resource="Test_Test::config2"
+                sortOrder="11"
+                action="null"
+                parent="Test_Test::discount"
+        />
+    </menu>
+</config>
