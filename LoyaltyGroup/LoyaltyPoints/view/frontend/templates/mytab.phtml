@@ -1,4 +1,11 @@
 <?php
-echo 2+2;
+/** @var LoyaltyGroup\LoyaltyPoints\Block\PercentCount $block*/
+$result = $block->getPercentOfLoyalty();
+var_dump($result);
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
 ?>
-<span> My Loyalty Points stremyatsa k nulyu </span>
+<span> My Ref Link: magento.lox/sadf79g6as9gu4987yawg</span> <br/>
+<span> My Loyalty Points:  </span><br/>
+<span> My percent of cashback:<?php $conf = $objectManager
+        ->get('Magento\Framework\App\Config\ScopeConfigInterface')
+        ->getValue('loyalty/general/display_text'); echo $conf;?>  %</span>
